@@ -1,0 +1,149 @@
+.view,body,html {
+	height:100%
+}
+
+.navbar {
+	background-color:rgba(0,0,0,.2)
+}
+
+.nav-item {
+	color: white;
+}
+
+
+.page-footer, .top-nav-collapse {
+	background-color:#1C2331
+}
+
+.top {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.bantext {
+	text-align: center;
+	color: white;
+
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-bottom: 1%;  
+	border: solid 3px white;
+	padding: 3%
+}
+
+.bantext a {
+	color: white;
+}
+
+.bantext h1 {
+	margin-bottom: 4%;
+}
+
+
+
+.view {
+	background-image: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url('img/banner_earth.jpg');
+	background-repeat: no-repeat; 
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+}
+
+.bantext p {
+	margin-bottom: 4%;
+	display: block;
+}
+
+.team {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 7%;
+}
+
+.containerteam {
+	position: relative;
+  width: 30%;
+  display: flex;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  filter: drop-shadow(0 0 0.75rem black);
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.containerteam:hover .image {
+  opacity: 0.3;
+}
+
+.containerteam:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.titleteam {
+	text-align: center;
+}
+
+/*--------------------------------dernieres sorties------*/
+
+  .containerproduct {
+  position: relative;
+  max-width: 800px; /* Maximum width */
+  margin: 0 auto; /* Center it */
+
+}
+
+.containerproduct .content {
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; /* Grey text */
+  width: 100%; /* Full width */
+  padding: 2%; /* Some padding */
+  text-align: center;
+}
+
+.lastproduct {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 7%;
+}
+
+.rowproduct a {
+	text-decoration: none;
+}
+
+/*-------------------*/
+@media screen and (max-width: 600px) {
+		.bantext p {
+			margin-bottom: 4%;
+			display: none;
+		}
+		.navbar {
+		background-color:#1C2331
+	}
+	
+}
