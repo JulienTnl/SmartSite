@@ -1,0 +1,127 @@
+@import url(components/navbar.css);
+@import url(components/banner.css);
+@import url(components/team.css);
+@import url(components/button.css);
+
+
+.view,body,html {
+	height:100%
+}
+
+.page-footer, .top-nav-collapse {
+	background-color:#1C2331
+}
+
+/*-------------first row------------------*/
+
+.buttonpropos a {
+	text-decoration: none;
+	color: black;
+}
+
+.imagetop {
+	width: 50%;
+}
+
+.textetop {
+	width: 50%;
+}
+
+/*--------------------------------dernieres sorties------*/
+
+.lastproduct a:hover {
+	filter: drop-shadow(0 0 0.75rem black);
+}
+
+.containerproduct {
+	position: relative;
+	max-width: 800px; /* Maximum width */
+	margin: 0 auto; /* Center it */
+}
+
+.containerproduct .content {
+	bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+	background: rgb(0, 0, 0); /* Fallback color */
+	background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+	color: #f1f1f1; /* Grey text */
+	width: 100%; /* Full width */
+	padding: 2%; /* Some padding */
+	text-align: center;
+}
+
+.lastproduct {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 7%;
+}
+
+.rowproduct a {
+	text-decoration: none;
+}
+
+
+
+/*-------footer----------*/
+
+
+footer {
+	background-color: black;
+	color: white;
+}
+
+footer a {
+	color: white;
+	text-decoration: none;
+}
+
+
+/*-----------------------*/
+
+
+
+@media screen and (max-width: 600px) {
+	.bantext p {
+		margin-bottom: 4%;
+		display: none;
+	}
+	.navbar {
+		background-color:#1C2331;
+
+	}
+
+	.imagetop {
+		width: 100%;
+	}
+
+	.textetop {
+		width: 100%;
+		text-align: center;
+	}
+
+	.lastproduct {
+		display: block;
+	}
+
+	iframe {
+		width: 100%;
+	}
+
+	.team {
+		display: block;
+	}
+
+	.containerteam {
+		width: 100%;
+		margin-bottom: 10%;
+	}
+
+	.newsletter {
+		width: 100%;
+	}
+
+	.carou {
+		width: 100%;
+		margin-top: 40px;
+	}
+	
+}

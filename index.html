@@ -1,14 +1,14 @@
-<!DOCTYPE html> 
-<html>
+<!doctype html>
+<html lang="fr">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://use.fontawesome.com/b59c0e5a7a.js"></script>
-  <title>Smart World</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Smart World</title>
 </head>
 <body>
-  <!-- Navbar -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Smart World</a>
@@ -28,78 +28,44 @@
               Boutique
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
+              <li><a class="dropdown-item" href="#">Sport</a></li>
+              <li><a class="dropdown-item" href="#">Santé</a></li>
+              <li><a class="dropdown-item" href="#">Maison</a></li>
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
+            <a class="nav-link" href="html/contact.html">Contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <!-- Navbar -->
-
-  <!-- Full Page Intro -->
   <div class="view">
-
-    <!-- Mask & flexbox options-->
     <div class="top">
-
-      <!-- Content -->
       <div class="bantext">
         <h1>
-          <strong>Smart Object</strong>
+          <strong>Smart World</strong>
         </h1>
-
         <p>
           <strong>Tout sur les objets connectés</strong>
-
         </p>
-
         <p class>
           <strong>Un monde plus en plus connecté, essayons d’en voir toutes les possibilités</strong>
-
         </p>
-
         <a href="#team" class="btn btn-outline-white btn-lg">Nous découvrir
-          <i class="fa fa-graduation-cap ml-2"></i>
+          <i class="fa fa-search"></i>
         </a>
       </div>
-      <!-- Content -->
-
     </div>
-    <!-- Mask & flexbox options-->
-
   </div>
-  <!-- Full Page Intro -->
-
-  <!--Main layout-->
   <main>
     <div class="container">
-
-      <!--Section: Main info-->
-      <section class="mt-5 wow fadeIn">
-
-
-        <!--Grid row-->
+      <section class="mt-5">
         <div class="row mb-5">
-
-          <!--Grid column-->
-          <div class="col-md-6 mb-4">
-
-            <img src="https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg" class="img-fluid z-depth-1-half" alt="">
-
+          <div class="mb-4 imagetop">
+            <img src="img/connecte.jpg" class="img-fluid z-depth-1-half" alt="objet connecté">
           </div>
-          <!--Grid column-->
-
-          <!--Grid column-->
-          <div id="team" class="col-md-6 mb-4">
-
-            <!-- Main heading -->
+          <div id="team" class="mb-4 textetop">
             <p>
               <strong>8 millards</strong> d'objets connectés dans le monde,
             </p><br>
@@ -109,372 +75,274 @@
             <p>
               <strong>5G</strong> pour rendre nos villes intelligentes
             </p>
-
-            <!-- Main heading -->
-
             <hr>
-
             <h3 class="h3 mb-3">Tout sur les objets intelligents</h3>
-            <button>Vidéo présentation</button>
+            <button class="my-btn-border my-border-red-btn buttonpropos"><a href="#propos">Vidéo présentation</a></button>
           </div>
-          <!--Grid column-->
-
         </div>
-        <!--Grid row-->
         <div class="row">
           <h2 class="titleteam">Notre équipe</h2>
           <div class="team">
             <div class="container containerteam">
-              <img src="img/employee1.jpg" alt="Avatar" class="image" style="width:100%">
+              <img src="img/employee1.jpg" alt="employe un" class="image" style="width:100%">
               <div class="middle">
-                <div class="text">John Doe</div>
+                <div class="text">John Davidson</div>
               </div>
             </div>
             <div class="container containerteam">
-              <img src="img/employee1.jpg" alt="Avatar" class="image" style="width:100%">
+              <img src="img/employee2.jpg" alt="employe deux" class="image" style="width:100%">
               <div class="middle">
-                <div class="text">John Doe</div>
+                <div class="text">Caroline Tona</div>
               </div>
             </div>
             <div class="container containerteam">
-              <img src="img/employee1.jpg" alt="Avatar" class="image" style="width:100%">
+              <img src="img/employee3.jpg" alt="employe trois" class="image" style="width:100%">
               <div class="middle">
-                <div class="text">John Doe</div>
+                <div class="text">James Dupont</div>
               </div>
             </div>
           </div>
-
         </div>
-
       </section>
-      <!--Section: Main info-->
-
       <hr class="my-5">
-
-      <!--Section: Main features & Quick Start-->
       <section>
-
-        <h3 class="h3 text-center mb-5">À propos de SmartWorld</h3>
-
-        <!--Grid row-->
-        <div class="row wow fadeIn">
-
-          <!--Grid column-->
+        <h3 id="propos" class="h3 text-center mb-5">À propos de SmartWorld</h3>
+        <div class="row">
           <div class="col-lg-6 col-md-12 px-4">
-
-            <!--First row-->
             <div class="row">
               <div class="col-1 mr-3">
-                <i class="fas fa-code fa-2x indigo-text"></i>
+                <i class="fa fa-level-up"></i>
               </div>
               <div class="col-10">
-                <h5 class="feature-title">Bootstrap 4</h5>
-                <p class="grey-text">Thanks to MDB you can take advantage of all feature of newest Bootstrap 4.</p>
+                <h5 class="feature-title">Numéro 1 des objets connectés</h5>
+                <p class="grey-text">Notre aventure a débuté en Janvier 2021 et nous sommes déjà en première place.</p>
               </div>
             </div>
-            <!--/First row-->
-
             <div style="height:30px"></div>
-
-            <!--Second row-->
             <div class="row">
               <div class="col-1 mr-3">
-                <i class="fas fa-book fa-2x blue-text"></i>
+                <i class="fa fa-comment"></i>
               </div>
               <div class="col-10">
-                <h5 class="feature-title">Detailed documentation</h5>
-                <p class="grey-text">We give you detailed user-friendly documentation at your disposal. It will help you to implement your ideas
-                  easily.
+                <h5 class="feature-title">Conseils</h5>
+                <p class="grey-text">Nous mettons un point d'honneur à bien conseiller nos clients pour qu'ils puissent acheter et utiliser les objets qu'ils auroont besoin.
                 </p>
               </div>
             </div>
-            <!--/Second row-->
-
             <div style="height:30px"></div>
-
-            <!--Third row-->
             <div class="row">
               <div class="col-1 mr-3">
-                <i class="fas fa-graduation-cap fa-2x cyan-text"></i>
+                <i class="fa fa-file-video-o"></i>
               </div>
               <div class="col-10">
-                <h5 class="feature-title">Lots of tutorials</h5>
-                <p class="grey-text">We care about the development of our users. We have prepared numerous tutorials, which allow you to learn
-                how to use MDB as well as other technologies.</p>
+                <h5 class="feature-title">De nombreux tutoriels et tests</h5>
+                <p class="grey-text">Nous avons sur le site de nombreuses vidéos vous permettant d'observer l'utilisation des différents produits</p>
               </div>
             </div>
-            <!--/Third row-->
-
           </div>
-          <!--/Grid column-->
-
-          <!--Grid column-->
           <div class="col-lg-6 col-md-12">
-
-            <p class="h5 text-center mb-4">Watch our "5 min Quick Start" tutorial</p>
-            <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/cXTThxoywNQ" allowfullscreen></iframe>
+            <p class="h5 text-center mb-4">Vidéo de présentation avec notre partenaire Léo Duff</p>
+            <div class="video">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/X6GYxdQ3xBE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
           </div>
-          <!--/Grid column-->
-
         </div>
-        <!--/Grid row-->
-
       </section>
-      <!--Section: Main features & Quick Start-->
-
       <hr class="my-5">
-
-      <!--Section: Not enough-->
       <section>
-
-        <h2 class="my-5 h3 text-center">Not enough?</h2>
-
-        <!--First row-->
-        <div class="row features-small mb-5 mt-3 wow fadeIn">
-
-          <!--First column-->
+        <h2 class="my-5 h3 text-center">Les possibilités avec l'Assistant Google</h2>
+        <div class="row features-small mb-5 mt-3">
           <div class="col-md-4">
             <!--First row-->
             <div class="row">
               <div class="col-2">
-                <i class="fas fa-check-circle fa-2x indigo-text"></i>
+                <i class="fa fa-search"></i>
               </div>
               <div class="col-10">
-                <h6 class="feature-title">Free for personal and commercial use</h6>
-                <p class="grey-text">Our license is user-friendly. Feel free to use MDB for both private as well as commercial projects.
+                <h6 class="feature-title">Recherche</h6>
+                <p class="grey-text">Faire des recherches Ok Google
                 </p>
                 <div style="height:15px"></div>
               </div>
             </div>
-            <!--/First row-->
-
-            <!--Second row-->
             <div class="row">
               <div class="col-2">
-                <i class="fas fa-check-circle fa-2x indigo-text"></i>
+                <i class="fa fa-sun-o"></i>
               </div>
               <div class="col-10">
-                <h6 class="feature-title">400+ UI elements</h6>
-                <p class="grey-text">An impressive collection of flexible components allows you to develop any project.
+                <h6 class="feature-title">Météo</h6>
+                <p class="grey-text">Demander les prévisions météos
                 </p>
                 <div style="height:15px"></div>
               </div>
             </div>
-            <!--/Second row-->
-
-            <!--Third row-->
             <div class="row">
               <div class="col-2">
-                <i class="fas fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">600+ icons</h6>
-                <p class="grey-text">Hundreds of useful, scalable, vector icons at your disposal.</p>
-                <div style="height:15px"></div>
-              </div>
+               <i class="fa fa-futbol-o"></i>
+             </div>
+             <div class="col-10">
+              <h6 class="feature-title">Sport</h6>
+              <p class="grey-text">Savoir tous les résultats sportifs des derniers jours et heures</p>
+              <div style="height:15px"></div>
             </div>
-            <!--/Third row-->
-
-            <!--Fourth row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fas fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">Fully responsive</h6>
-                <p class="grey-text">It doesn't matter whether your project will be displayed on desktop, laptop, tablet or mobile phone. MDB
-                looks great on each screen.</p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Fourth row-->
           </div>
-          <!--/First column-->
-
-          <!--Second column-->
-          <div class="col-md-4 flex-center">
-            <img src="https://mdbootstrap.com/img/Others/screens.png" alt="MDB Magazine Template displayed on iPhone" class="z-depth-0 img-fluid">
+          <div class="row">
+            <div class="col-2">
+              <i class="fa fa-envelope"></i>
+            </div>
+            <div class="col-10">
+              <h6 class="feature-title">Mail</h6>
+              <p class="grey-text">Contrôler sa messagerie mail avec la voix</p>
+              <div style="height:15px"></div>
+            </div>
           </div>
-          <!--/Second column-->
-
-          <!--Third column-->
-          <div class="col-md-4 mt-2">
-            <!--First row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fas fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">70+ CSS animations</h6>
-                <p class="grey-text">Neat and easy to use animations, which will increase the interactivity of your project and delight your visitors.
-                </p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/First row-->
-
-            <!--Second row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fas fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">Plenty of useful templates</h6>
-                <p class="grey-text">Need inspiration? Use one of our predefined templates for free.</p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Second row-->
-
-            <!--Third row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fas fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">Easy installation</h6>
-                <p class="grey-text">5 minutes, a few clicks and... done. You will be surprised at how easy it is.
-                </p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Third row-->
-
-            <!--Fourth row-->
-            <div class="row">
-              <div class="col-2">
-                <i class="fas fa-check-circle fa-2x indigo-text"></i>
-              </div>
-              <div class="col-10">
-                <h6 class="feature-title">Easy to use and customize</h6>
-                <p class="grey-text">Using MDB is straightforward and pleasant. Components flexibility allows you deep customization. You will
-                easily adjust each component to suit your needs.</p>
-                <div style="height:15px"></div>
-              </div>
-            </div>
-            <!--/Fourth row-->
-          </div>
-          <!--/Third column-->
-
         </div>
-        <!--/First row-->
-
-      </section>
-      <!--Section: Not enough-->
-
-      <hr class="mb-5">
-
-      <!--Section: More-->
-      <section>
-
-        <h2 class="my-5 h3 text-center">Les dernières sorties</h2>
-        <!--Grid row-->
-        <div class="row rowproduct">
-          <a href="#"><div class="lastproduct">
-            <div class="container containerproduct">
-              <img src="img/employee1.jpg" alt="Notebook" style="width:100%;">
-              <div class="content">
-                <h1>Heading</h1>
-                <p>Lorem ipsum..</p>
-              </div>
-            </div></a>
-            <div class="container containerproduct">
-              <img src="img/employee1.jpg" alt="Notebook" style="width:100%;">
-              <div class="content">
-                <h1>Heading</h1>
-                <p>Lorem ipsum..</p>
-              </div>
+        <div class="col-md-4 flex-center">
+          <img src="img/googlehome.png" class="z-depth-0 img-fluid">
+        </div>
+        <div class="col-md-4 mt-2">
+          <!--First row-->
+          <div class="row">
+            <div class="col-2">
+              <i class="fa fa-bell"></i>
             </div>
-            <div class="container containerproduct">
-              <img src="img/employee1.jpg" alt="Notebook" style="width:100%;">
-              <div class="content">
-                <h1>Heading</h1>
-                <p>Lorem ipsum..</p>
-              </div>
+            <div class="col-10">
+              <h6 class="feature-title">Alarme/Rappels</h6>
+              <p class="grey-text">Création de notes pour plus tard, des listes de courses ou encore des réveils
+              </p>
+              <div style="height:15px"></div>
             </div>
           </div>
-
+          <div class="row">
+            <div class="col-2">
+             <i class="fa fa-mobile"></i>
+           </div>
+           <div class="col-10">
+            <h6 class="feature-title">Nombreuses applications reliées</h6>
+            <p class="grey-text">lumières, aspirateurs, machines à café</p>
+            <div style="height:15px"></div>
+          </div>
         </div>
-        
-
-      </section>
-      <!--Section: More-->
-
+        <div class="row">
+          <div class="col-2">
+            <i class="fa fa-google"></i>
+          </div>
+          <div class="col-10">
+            <h6 class="feature-title">Culture Général</h6>
+            <p class="grey-text">Grâce à Google, l'assistant saura répondre à de nombreuses questions
+            </p>
+            <div style="height:15px"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <i class="fa fa-bullhorn"></i>
+          </div>
+          <div class="col-10">
+            <h6 class="feature-title">Blague</h6>
+            <p class="grey-text">Le petit bonus est que l'Assistant vocal pourra toujours sortir une petite blague quand vous lui demanderez</p>
+            <div style="height:15px"></div>
+          </div>
+        </div>
+      </div>
     </div>
-  </main>
-  <!--Main layout-->
-
-  <!--Footer-->
-  <footer class="page-footer text-center font-small mt-4 wow fadeIn">
-
-    <!--Call to action-->
-    <div class="pt-4">
-      <a class="btn btn-outline-white" href="https://mdbootstrap.com/getting-started/" target="_blank" role="button">Download MDB
-        <i class="fas fa-download ml-2"></i>
-      </a>
-      <a class="btn btn-outline-white" href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank" role="button">Start free tutorial
-        <i class="fas fa-graduation-cap ml-2"></i>
-      </a>
+  </section>
+  <hr class="mb-5">
+  <section>
+    <h2 class="my-5 h3 text-center">Les dernières sorties</h2>
+    <div class="row rowproduct">
+      <div class="lastproduct">
+        <a href="#rowproduct">
+          <div class="container containerproduct">
+            <img src="img/ampoule.jpg" alt="Ampoule philips" style="width:100%;">
+            <div class="content">
+              <h2>Philips Hue</h2>
+              <p>éclairage</p>
+            </div>
+          </div>
+        </a>
+        <a href="#rowproduct">
+          <div class="container containerproduct">
+            <img src="img/nestmini.jpg" alt="Nest mini" style="width:100%;">
+            <div class="content">
+              <h2>Nest mini</h2>
+              <p>Assistant vocal</p>
+            </div>
+          </div>
+        </a>
+        <a href="#rowproduct">
+          <div class="container containerproduct">
+            <img src="img/irobot.jpg" alt="Asprirateur" style="width:100%;">
+            <div class="content">
+              <h2>IRobot</h2>
+              <p>Nettoyage</p>
+            </div>
+          </div>
+        </a>
+      </div>
     </div>
-    <!--/.Call to action-->
-
-    <hr class="my-4">
-
-    <!-- Social icons -->
-    <div class="pb-4">
-      <a href="https://www.facebook.com/mdbootstrap" target="_blank">
-        <i class="fab fa-facebook-f mr-3"></i>
-      </a>
-
-      <a href="https://twitter.com/MDBootstrap" target="_blank">
-        <i class="fab fa-twitter mr-3"></i>
-      </a>
-
-      <a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4" target="_blank">
-        <i class="fab fa-youtube mr-3"></i>
-      </a>
-
-      <a href="https://plus.google.com/u/0/b/107863090883699620484" target="_blank">
-        <i class="fab fa-google-plus-g mr-3"></i>
-      </a>
-
-      <a href="https://dribbble.com/mdbootstrap" target="_blank">
-        <i class="fab fa-dribbble mr-3"></i>
-      </a>
-
-      <a href="https://pinterest.com/mdbootstrap" target="_blank">
-        <i class="fab fa-pinterest mr-3"></i>
-      </a>
-
-      <a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
-        <i class="fab fa-github mr-3"></i>
-      </a>
-
-      <a href="http://codepen.io/mdbootstrap/" target="_blank">
-        <i class="fab fa-codepen mr-3"></i>
-      </a>
+    <div class="row rowproduct">
+      <div class="lastproduct">
+        <a href="#rowproduct">
+          <div class="container containerproduct">
+            <img src="img/brossedents.jpg" alt="Brosse à dents" style="width:100%;">
+            <div class="content">
+              <h2>DiamondClean</h2>
+              <p>Hygiène</p>
+            </div>
+          </div>
+        </a>
+        <a href="#rowproduct">
+          <div class="container containerproduct">
+            <img src="img/machinecafe.jpg" alt="machine à café" style="width:100%;">
+            <div class="content">
+              <h2>Nespresso</h2>
+              <p>Alimentation</p>
+            </div>
+          </div>
+        </a>
+        <a href="#rowproduct">
+          <div class="container containerproduct">
+            <img src="img/bagueco.jpg" alt="bague connecté" style="width:100%;">
+            <div class="content">
+              <h2>Aeklys</h2>
+              <p>Accessoires</p>
+            </div>
+          </div>
+        </a>
+      </div>
     </div>
-    <!-- Social icons -->
-
-    <!--Copyright-->
-    <div class="footer-copyright py-3">
-      © 2019 Copyright:
-      <a href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank"> MDBootstrap.com </a>
-    </div>
-    <!--/.Copyright-->
-
-  </footer>
-  <!--/.Footer-->  
-
-
-
-
-  <footer>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#273036" fill-opacity="1" d="M0,224L0,64L160,64L160,128L320,128L320,224L480,224L480,288L640,288L640,192L800,192L800,160L960,160L960,288L1120,288L1120,288L1280,288L1280,96L1440,96L1440,320L1280,320L1280,320L1120,320L1120,320L960,320L960,320L800,320L800,320L640,320L640,320L480,320L480,320L320,320L320,320L160,320L160,320L0,320L0,320Z"></path></svg>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  </section>
+</div>
+</main>
+<footer class="text-center font-small mt-4">
+  <hr class="my-4">
+  <div class="pb-4">
+    <a href="https://www.facebook.com/" target="_blank">
+      <i class="fa fa-facebook-f mr-3"></i>
+    </a>
+    <a href="https://twitter.com/" target="_blank">
+      <i class="fa fa-twitter mr-3"></i>
+    </a>
+    <a href="https://www.youtube.com/" target="_blank">
+      <i class="fa fa-youtube mr-3"></i>
+    </a>
+    <a href="https://dribbble.com/" target="_blank">
+      <i class="fa fa-dribbble mr-3"></i>
+    </a>
+    <a href="https://pinterest.com/" target="_blank">
+      <i class="fa fa-pinterest mr-3"></i>
+    </a>
+    <a href="https://github.com/" target="_blank">
+      <i class="fa fa-github mr-3"></i>
+    </a>
+  </div>
+  <div class="footer-copyright py-3">
+    © 2021 Copyright:
+    Made by Julien
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,224L0,64L160,64L160,128L320,128L320,224L480,224L480,288L640,288L640,192L800,192L800,160L960,160L960,288L1120,288L1120,288L1280,288L1280,96L1440,96L1440,320L1280,320L1280,320L1120,320L1120,320L960,320L960,320L800,320L800,320L640,320L640,320L480,320L480,320L320,320L320,320L160,320L160,320L0,320L0,320Z"></path></svg>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 </body>
-
-</html> <!-- end of file -->
+</html>

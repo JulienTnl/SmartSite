@@ -1,0 +1,16 @@
+.my-btn {
+	padding: 5px 10px;
+	border-radius: 50px;
+}
+
+.my-btn-border {
+	padding: 10px;
+	border-radius: 5px;
+	margin-bottom: 1px;
+}
+
+.my-border-red-btn {
+	background-color: transparent;
+	border: 1px solid red;
+	color: red;
+}
